@@ -26,13 +26,91 @@
 // var res3 = (vi*t) + (1*a*t*t) / 2;
 // document.write("<h3> The 2nd Speed Is : " + res3 + "<br/>" + "<br/>" + "<h3/>");
 
-var names = prompt("Enter Name : ");
-var eng = parseFloat(prompt("English Marks : "));
-var urdu = parseFloat(prompt("Urdu Marks : "));
-var phy = parseFloat(prompt("Physics Marks : "));
-var chem = parseFloat(prompt("Chemistry Marks : "));
-var comp = parseFloat(prompt("Computer Marks : "));
-var total = eng+urdu+phy+chem+comp
-document.write("<h3>" + names + " your marks are : " + total + "<h3/>")
-var per = (total/250) * 100;
-document.write("<h3>" + names + " your % is : " + per + "%" + "<h3/>")
+// var names = prompt("Enter Name : ");
+// var eng = parseFloat(prompt("English Marks : "));
+// var urdu = parseFloat(prompt("Urdu Marks : "));
+// var phy = parseFloat(prompt("Physics Marks : "));
+// var chem = parseFloat(prompt("Chemistry Marks : "));
+// var comp = parseFloat(prompt("Computer Marks : "));
+// var total = eng+urdu+phy+chem+comp
+// document.write("<h3>" + names + " your marks are : " + total + "<h3/>")
+// var per = (total/250) * 100;
+// document.write("<h3>" + names + " your % is : " + per + "%" + "<h3/>")
+
+
+// course registration
+
+// var cou = parseInt(prompt("How Many Course Studied : "));
+// var li = prompt("Do You Want Library Membership? ");//1500
+// var sp = prompt("Do You Want Sports Membership? ");//2500
+// var ca = prompt("Do You Want Canteen Membership? ");//2500
+// var shs = prompt("Do You Want Shuttle Service Membership? ");//4000
+
+// var fee = cou * 15000;
+// if (li == no) {
+//     var totalfee = fee + 2500 + 2500 + 4000;
+// }
+// else{
+//     var totalfee = fee + 1500 + 2500 + 2500 + 4000;
+// }
+
+// if (sp == no) {
+//     var totalfee = fee + 1500 + 2500 + 4000;
+// }
+// else{
+//     var totalfee = fee + 1500 + 2500 + 2500 + 4000;
+// }
+
+// if (ca == no) {
+//     var totalfee = fee + 1500 + 2500 + 4000;
+// }
+// else{
+//     var totalfee = fee + 1500 + 2500 + 2500 + 4000;
+// }
+
+// if (shs == no) {
+//     var totalfee = fee + 1500 + 2500 + 2500;
+// }
+// else{
+//     var totalfee = fee + 1500 + 2500 + 2500 + 4000;
+// }
+
+// document.write("The Fee Of Your Courses Are : " + fee + "<br/>" + "<br/>" );
+// document.write("Your Total Fee Is : " + totalfee + "<br/>" + "<br/>" );
+
+
+var eng = parseFloat(prompt("Enter Your English Marks : "));
+var urdu = parseFloat(prompt("Enter Your Urdu Marks : "));
+var comp = parseFloat(prompt("Enter Your Computer Marks : "));
+var chem = parseFloat(prompt("Enter Your Chemistry Marks : "));
+var phy = parseFloat(prompt("Enter Your Physics Marks : "));
+
+var totalmarks = eng + urdu + comp + chem + phy;
+var percentage = (totalmarks * 100) / 500;
+
+if (percentage >= 80) {
+    document.write("You Have Got A+" + "<br/>" + "<hr/>")
+}
+else if (percentage >= 70){
+    document.write("You Have Got A" + "<br/>" + "<hr/>")
+}
+else if (percentage >= 60){
+    document.write("You Have Got B" + "<br/>" + "<hr/>")
+}
+else if (percentage >= 50){
+    document.write("You Have Got C , Your FAIL" + "<br/>" + "<hr/>")
+}
+
+document.write("Your Total Marks Are : " + totalmarks + "<br/>" + "<hr/>");
+document.write("Your Percentage Is : " + percentage + "<br/>" + "<hr/>");
+
+
+
+var email = prompt("Enter Email : " );
+var psw = prompt("Enter Password : " );
+if (email == "oxyshibli@gmail.com" && psw == "123" ) {
+    document.write("Welcome Oxy")
+}
+else{
+    document.write("Inavalid Email Or password");
+}
